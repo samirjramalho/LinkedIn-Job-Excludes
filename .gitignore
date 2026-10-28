@@ -1,0 +1,5 @@
+# Local Opera upload package
+*.zip
+
+# Standalone copy of the store icon; the maintained icon is in assets/
+/LinkedIn-Job-Excludes-icon-64.png

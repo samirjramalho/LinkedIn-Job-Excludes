@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LinkedIn Job Excludes</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header class="header-row">
+        <h1 id="heading">Empresas bloqueadas</h1>
+        <div id="language-switch" class="language-switch" role="group" aria-label="Idioma / Language">
+          <button id="language-pt" type="button" aria-pressed="true" aria-label="Usar português do Brasil">PT-BR</button>
+          <button id="language-en" type="button" aria-pressed="false" aria-label="Use English">EN</button>
+        </div>
+      </header>
+      <p id="version" class="version"></p>
+      <p id="description" class="description">As vagas dessas empresas serão removidas dos resultados do LinkedIn.</p>
+      <p id="filter-status" class="filter-status" role="status" aria-live="polite">Abra uma busca de vagas no LinkedIn para ver o status do filtro.</p>
+
+      <form id="company-form" novalidate>
+        <label id="company-label" for="company-input">Adicionar empresa</label>
+        <div class="entry-row">
+          <input id="company-input" name="company" type="text" placeholder="Nome da empresa" autocomplete="off" aria-required="true" aria-describedby="notice">
+          <button id="add-button" type="submit">Adicionar</button>
+        </div>
+      </form>
+      <ul id="company-list" aria-live="polite" aria-relevant="additions removals"></ul>
+      <div id="notice" class="notice" data-state="success" role="status" aria-live="polite" aria-atomic="true" hidden>
+        <span id="notice-icon" class="notice-icon" aria-hidden="true"></span>
+        <span id="status"></span>
+      </div>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
