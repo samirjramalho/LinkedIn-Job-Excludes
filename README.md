@@ -14,6 +14,18 @@ Extensão de navegador que filtra resultados de vagas do LinkedIn ocultando os c
 
 A filtragem acontece no navegador, sobre os cards carregados na página. Ela não altera a busca ou os resultados armazenados pelo LinkedIn. Como o LinkedIn pode mudar a estrutura das páginas, a detecção pode precisar de atualizações futuras.
 
+## Demonstração visual / Visual demo
+
+As capturas mostram os resultados antes e depois de adicionar uma empresa. Nomes e logos de empresas foram pixelados para manter o foco no funcionamento da extensão.
+
+**Antes / Before:** nenhuma empresa bloqueada; 0 vagas removidas.
+
+![Antes do filtro: lista de vagas e popup da extensão sem empresas bloqueadas, com zero vagas removidas.](docs/screenshots/before-blocking.png)
+
+**Depois / After:** empresa adicionada à lista; 11 vagas removidas nesta página.
+
+![Depois do filtro: popup com uma empresa na lista e contador indicando 11 vagas removidas; nomes e logos estão anonimizados.](docs/screenshots/after-blocking.png)
+
 ## Instalação no Opera
 
 ### Pela loja Opera Add-ons
